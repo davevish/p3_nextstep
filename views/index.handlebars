@@ -1,0 +1,39 @@
+<img src="../assets/images/bharath-suresh-388435.jpg">
+
+<h1>Next Step</h1>
+
+<div class="row">
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+</div>
+
+<style>
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    h1{
+        text-align: center;
+    }
+</style>
+
+<script>
+    function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+    };
+</script>
