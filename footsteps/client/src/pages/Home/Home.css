@@ -1,0 +1,19 @@
+body{
+    background: gainsboro;
+}
+
+h1{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+#google{
+    margin-top: 40px;
+    margin-left: 45%;
+}
+#logo{
+    text-align: center;
+}
