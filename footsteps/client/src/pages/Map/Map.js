@@ -49,7 +49,7 @@ class Map extends Component {
 		var mapholder = document.getElementById('map');
 
 		var myOptions = {
-			center:latlon,zoom:14,
+			center:latlon,zoom:17,
 			mapTypeId: window.google.maps.MapTypeId.ROADMAP,
 			mapTypeControl:false,
 			navigationControlOptions:{style:window.google.maps.NavigationControlStyle.SMALL}
@@ -84,8 +84,7 @@ class Map extends Component {
 		return (
 			<Container fluid>
 				<div className="row">
-					<div>
-						<button onClick={this.getLocation}>Find Me</button>
+					<div className="container col-sm-12">
 						<div id="map"> </div>
 					</div>
 				</div>
