@@ -6,7 +6,7 @@
   "scripts": {
     "myserver": "node server.js",
     "myclient": "node scripts/start-client.js",
-    "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "mydev": "concurrently \"nodemon server.js\" \"npm run client\"",
     "postinstall": "(cd client && yarn install && yarn build)",
     "start": "node server.js",
     "mybuildscript": "node scripts/build.js",
