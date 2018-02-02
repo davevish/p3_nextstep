@@ -3,6 +3,7 @@ import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 import {Container } from "../../components/Grid";
 import "./Home.css";
+import "../../images/f.jpg";
 
 class Home extends Component {
 	state = {
@@ -18,6 +19,8 @@ class Home extends Component {
 				<h1>Footsteps</h1>
 
 				<h4>A new way to interact with your surroundings!</h4>
+
+				{/*<img src={'../../images/f.jpg'}/>*/}
 
 				<div className="row">
 					<div className="g-signin2" id="google" data-onsuccess="onSignIn" data-theme="dark">Signin</div>

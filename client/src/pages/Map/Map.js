@@ -32,10 +32,10 @@ class Map extends Component {
 		// 	zoomControl: true
 		// });
 		//
-		// let marker = new google.maps.Marker({
-		// 	position: { lat: 33.753746, lng: -84.386330 },
-		// 	map: window.map
-		// });
+		let marker = new window.google.maps.Marker({
+			position: { lat: 34.037435, lng: -84.068132},
+			map: window.map
+		});
 
 		this.getLocation();
 	}

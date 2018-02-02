@@ -4,15 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "myserver": "node server.js",
-    "myclient": "node scripts/start-client.js",
-    "mydev": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
     "postinstall": "(cd client && yarn install && yarn build)",
     "start": "node server.js",
-    "mybuildscript": "node scripts/build.js",
-    "myseed": "node scripts/seedDB.js",
-    "mytest": "echo \"Error: no test specified\" && exit 1",
-    "myinstallDeps": "yarn && cd client && yarn"
+    "buildscript": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
   },
   "author": "",
   "license": "ISC",
