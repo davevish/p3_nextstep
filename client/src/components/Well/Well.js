@@ -9,11 +9,13 @@ const Well = () =>
 					<p>Georgia Tech GLC Hunt</p>
 				</div>
 				<div className="container col-sm-2">
-					<p><a className="btn btn-primary" role="button" href="/Map">Go!</a></p>
+					<p>
+						<a className="btn btn-primary" role="button" href="/Map">Go!</a>
+						{/*<a className="btn btn-danger" role="button">Delete</a>*/}
+					</p>
 				</div>
 			</div>
 		</div>
-
 	</div>;
 
 export default Well;

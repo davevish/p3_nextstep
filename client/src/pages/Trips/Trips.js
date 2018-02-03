@@ -20,6 +20,7 @@ class Trips extends Component {
 		return (
 			<Container fluid>
 				<h1>Lets Go On An Adventure!</h1>
+				{/*<p><a className="btn btn-primary" role="button">New Trip</a></p>*/}
 				<div className="container col-sm-offset-2 col-sm-8 col-sm-offset-2">
 					<Well />
 				</div>
