@@ -58,7 +58,7 @@ class Map extends Component {
 				path: google.maps.SymbolPath.CIRCLE,
 				scale: 5
 			},
-			title:"You are here!"
+		title:"You are here!"
 		});
 	}
 
@@ -94,4 +94,5 @@ class Map extends Component {
 
 export default Map;
 
+// https://jsfiddle.net/api/post/library/pure/
 // https://jsfiddle.net/api/post/library/pure/

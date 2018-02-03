@@ -18,7 +18,8 @@ class Task extends Component {
 	render() {
 		return (
 			<Container fluid>
-				<h1>Testing Task</h1>
+				<h1>Tasks Coming Soon!</h1>
+				<p><a className="btn btn-primary btn-lg" role="button" href="/Map">Return</a></p>
 			</Container>
 		);
 	}
