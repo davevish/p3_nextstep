@@ -12,7 +12,7 @@ class Map extends Component {
 			adventure: [],
 			location: "",
 			checkpoints: "",
-			x: document.getElementById("demo")
+			x: document.getElementById("map")
 		};
 	}
 
@@ -20,7 +20,7 @@ class Map extends Component {
 		if (navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(this.showPosition, this.showError);
 		} else {
-			this.setState({x: document.getElementById("demo").innerHTML("Geolocation is not supported by this browser.")})
+			this.setState({x: document.getElementById("map").innerHTML("Geolocation is not supported by this browser.")})
 		}
 	}
 
@@ -65,16 +65,16 @@ class Map extends Component {
 	showError(error) {
 		switch(error.code) {
 			case error.PERMISSION_DENIED:
-				this.setState({x: document.getElementById("demo").innerHTML("User denied the request for Geolocation.")});
+				this.setState({x: document.getElementById("map").innerHTML("User denied the request for Geolocation.")});
 				break;
 			case error.POSITION_UNAVAILABLE:
-				this.setState({x: document.getElementById("demo").innerHTML("Location information is unavailable.")});
+				this.setState({x: document.getElementById("map").innerHTML("Location information is unavailable.")});
 				break;
 			case error.TIMEOUT:
-				this.setState({x: document.getElementById("demo").innerHTML("The request to get user location timed out.")});
+				this.setState({x: document.getElementById("map").innerHTML("The request to get user location timed out.")});
 				break;
 			case error.UNKNOWN_ERROR:
-				this.setState({x: document.getElementById("demo").innerHTML("User denied the request for Geolocation.")});
+				this.setState({x: document.getElementById("map").innerHTML("User denied the request for geolocation.")});
 				break;
 		}
 	}
