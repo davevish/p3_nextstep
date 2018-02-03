@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import {Container} from "../../components/Grid";
 import API from "../../utils/API";
 import "./Contact.css";
+import "./formAction.PHP";
 
 class Contact extends Component {
 	state = {
@@ -23,7 +24,7 @@ class Contact extends Component {
 						<form className="well form-horizontal" action=" " method="post"  id="contact_form">
 							<fieldset>
 								 {/*Form Name*/}
-								<legend>Contact Us Today!</legend>
+								<legend>Contact Us  Today!</legend>
 
 								{/*Text input*/}
 								<div className="form-group">
@@ -49,124 +50,6 @@ class Contact extends Component {
 
 								{/*Text input*/}
 								<div className="form-group">
-									<label className="col-md-4 control-label">E-Mail</label>
-									<div className="col-md-4 inputGroupContainer">
-										<div className="input-group">
-											<span className="input-group-addon"><i className="glyphicon glyphicon-envelope"> </i></span>
-											<input name="email" placeholder="E-Mail Address" className="form-control"  type="text" />
-										</div>
-									</div>
-								</div>
-
-								{/*Text input*/}
-								<div className="form-group">
-									<label className="col-md-4 control-label">Phone #</label>
-									<div className="col-md-4 inputGroupContainer">
-										<div className="input-group">
-											<span className="input-group-addon"><i className="glyphicon glyphicon-earphone"> </i></span>
-											<input name="phone" placeholder="(XXX) XXX-XXXX" className="form-control" type="text" />
-										</div>
-									</div>
-								</div>
-
-								{/*Text input*/}
-								<div className="form-group">
-									<label className="col-md-4 control-label">Address</label>
-									<div className="col-md-4 inputGroupContainer">
-										<div className="input-group">
-											<span className="input-group-addon"><i className="glyphicon glyphicon-home"> </i></span>
-											<input name="address" placeholder="Address" className="form-control" type="text" />
-										</div>
-									</div>
-								</div>
-
-								{/*Text input*/}								<div className="form-group">
-									<label className="col-md-4 control-label">City</label>
-									<div className="col-md-4 inputGroupContainer">
-										<div className="input-group">
-											<span className="input-group-addon"><i className="glyphicon glyphicon-home"> </i></span>
-											<input name="city" placeholder="City" className="form-control"  type="text" />
-										</div>
-									</div>
-								</div>
-
-								{/*Select Basic*/}
-								<div className="form-group">
-									<label className="col-md-4 control-label">State</label>
-									<div className="col-md-4 selectContainer">
-										<div className="input-group">
-											<span className="input-group-addon"><i className="glyphicon glyphicon-list"> </i></span>
-											<select name="state" className="form-control selectpicker" >
-												<option value=" " >Please select your state</option>
-												<option>Alabama</option>
-												<option>Alaska</option>
-												<option>Arizona</option>
-												<option>Arkansas</option>
-												<option>California</option>
-												<option>Colorado</option>
-												<option>Connecticut</option>
-												<option>Delaware</option>
-												<option>District of Columbia</option>
-												<option>Florida</option>
-												<option>Georgia</option>
-												<option>Hawaii</option>
-												<option>Idaho</option>
-												<option>Illinois</option>
-												<option>Indiana</option>
-												<option>Iowa</option>
-												<option>Kansas</option>
-												<option>Kentucky</option>
-												<option>Louisiana</option>
-												<option>Maine</option>
-												<option>Maryland</option>
-												<option>Massachusetts</option>
-												<option>Michigan</option>
-												<option>Minnesota</option>
-												<option>Mississippi</option>
-												<option>Missouri</option>
-												<option>Montana</option>
-												<option>Nebraska</option>
-												<option>Nevada</option>
-												<option>New Hampshire</option>
-												<option>New Jersey</option>
-												<option>New Mexico</option>
-												<option>New York</option>
-												<option>North Carolina</option>
-												<option>North Dakota</option>
-												<option>Ohio</option>
-												<option>Oklahoma</option>
-												<option>Oregon</option>
-												<option>Pennsylvania</option>
-												<option>Rhode Island</option>
-												<option>South Carolina</option>
-												<option>South Dakota</option>
-												<option>Tennessee</option>
-												<option>Texas</option>
-												<option>Utah</option>
-												<option>Vermont</option>
-												<option>Virginia</option>
-												<option>Washington</option>
-												<option>West Virginia</option>
-												<option>Wisconsin</option>
-												<option>Wyoming</option>
-											</select>
-										</div>
-									</div>
-								</div>
-
-								{/*Text input*/}
-								<div className="form-group">
-									<label className="col-md-4 control-label">Zip Code</label>
-									<div className="col-md-4 inputGroupContainer">
-										<div className="input-group">
-											<span className="input-group-addon"><i className="glyphicon glyphicon-home"> </i></span>
-											<input name="zip" placeholder="Zip Code" className="form-control"  type="text" />
-										</div>
-									</div>
-								</div>
-
-								{/*Text input*/}
-								<div className="form-group">
 									<label className="col-md-4 control-label">Message</label>
 									<div className="col-md-4 inputGroupContainer">
 										<div className="input-group">
@@ -183,7 +66,7 @@ class Contact extends Component {
 								<div className="form-group">
 									<label className="col-md-4 control-label"> </label>
 									<div className="col-md-4" id="send">
-										<button type="submit" className="btn btn-warning" >Send <span className="glyphicon glyphicon-send"> </span></button>
+										<button type="submit" className="btn btn-warning" >Send<span className="glyphicon glyphicon-send"> </span></button>
 									</div>
 								</div>
 							</fieldset>
