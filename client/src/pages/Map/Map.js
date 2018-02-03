@@ -50,8 +50,9 @@ class Map extends Component {
 
 		var myOptions = {
 			center:latlon,zoom:17,
+			zoomControl: true,
 			mapTypeId: window.google.maps.MapTypeId.ROADMAP,
-			mapTypeControl:false,
+			mapTypeControl:true,
 			navigationControlOptions:{style:window.google.maps.NavigationControlStyle.SMALL}
 		}
 
