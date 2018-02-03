@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {Container} from "../../components/Grid";
 import API from "../../utils/API";
 import "./Contact.css";
@@ -24,7 +24,7 @@ class Contact extends Component {
 						<form className="well form-horizontal" action=" " method="post"  id="contact_form">
 							<fieldset>
 								 {/*Form Name*/}
-								<legend>Contact Us  Today!</legend>
+								<legend>Contact Us Today!</legend>
 
 								{/*Text input*/}
 								<div className="form-group">

@@ -6,7 +6,7 @@ import "./Task.css";
 
 class Task extends Component {
 	state = {
-		book: {}
+		adventure: {}
 	};
 
 	componentDidMount() {
