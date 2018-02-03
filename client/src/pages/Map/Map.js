@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import {Container } from "../../components/Grid";
 import "./Map.css";
 const google = window.google;
+const marker = window.marker;
+let uluru = {lat: 34.037435, lng: -84.068132};
 
 class Map extends Component {
 	constructor(props){
@@ -23,13 +25,7 @@ class Map extends Component {
 	}
 
 	componentDidMount(){
-		// window.map = new window.google.maps.Map(document.getElementById('map'), {
-		// 	center: { lat: 33.753746, lng: -84.386330 },
-		// 	zoom: 10,
-		// 	mapTypeId: 'roadmap',
-		// 	zoomControl: true
-		// });
-		//
+
 		let marker = new window.google.maps.Marker({
 			position: { lat: 34.037435, lng: -84.068132},
 			map: window.map
@@ -37,7 +33,6 @@ class Map extends Component {
 
 		this.getLocation();
 	}
-
 	// window.map
 
 	showPosition(position) {
@@ -45,6 +40,7 @@ class Map extends Component {
 		let lon = position.coords.longitude;
 		let latlon = new window.google.maps.LatLng(lat, lon);
 		// let map = document.getElementById('map');
+		// let uluru = {lat: 34.037435, lng: -84.068132};
 
 		let myOptions = {
 			center:latlon,zoom:17,
@@ -55,7 +51,15 @@ class Map extends Component {
 		};
 
 		let map = new window.google.maps.Map(document.getElementById("map"), myOptions);
-		let marker = new window.google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+		let marker = new window.google.maps.Marker({
+			position:latlon, uluru,
+			map:map,
+			icon: {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 5
+			},
+			title:"You are here!"
+		});
 	}
 
 	showError(error) {
@@ -89,3 +93,5 @@ class Map extends Component {
 }
 
 export default Map;
+
+// https://jsfiddle.net/api/post/library/pure/
